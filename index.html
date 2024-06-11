@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Representantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulário de Representantes</h1>
+        <form id="representante-form">
+            <div class="form-group">
+                <label for="representantes">Representante:</label>
+                <select id="representantes" required></select>
+            </div>
+            <div class="form-group">
+                <label for="clientes">Cliente:</label>
+                <select id="clientes" required></select>
+            </div>
+            <div class="form-group">
+                <label for="codigo_sistema">Código do Sistema:</label>
+                <input type="text" id="codigo_sistema" readonly>
+            </div>
+            <div class="form-group">
+                <label for="agn_st_fantasia">Nome Fantasia:</label>
+                <input type="text" id="agn_st_fantasia" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cnpj">CNPJ:</label>
+                <input type="text" id="cnpj" readonly>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" readonly>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" readonly>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número:</label>
+                <input type="text" id="numero" readonly>
+            </div>
+            <div class="form-group">
+                <label for="data_hora">Data e Hora:</label>
+                <input type="datetime-local" id="data_hora" required>
+            </div>
+            <div class="form-group">
+                <label for="motivo_visita">Motivo da Visita:</label>
+                <input type="text" id="motivo_visita" required>
+            </div>
+            <div class="form-group">
+                <label for="produto">Produto:</label>
+                <input type="text" id="produto" required>
+            </div>
+            <div class="form-group">
+                <label for="conclusao_visita">Conclusão da Visita:</label>
+                <input type="text" id="conclusao_visita" required>
+            </div>
+            <div class="form-group">
+                <label for="conclusoes_gerais">Conclusões Gerais:</label>
+                <textarea id="conclusoes_gerais" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
